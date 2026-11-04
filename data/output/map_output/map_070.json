@@ -1,0 +1,1 @@
+{"task_id": "map_070", "input_file": "input/map_070.csv", "input_size_kb": 270.33, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dosmServerBoot": 89, "kafka": 2, "cmdbRpcConsumer": 1, "gatewayServer": 2, "cmdbServer": 3, "doucApi": 3}, "exception_stats": {}, "hour_distribution": {"hour_1": 6, "hour_2": 56, "hour_3": 38}}

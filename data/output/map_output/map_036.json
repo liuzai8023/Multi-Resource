@@ -1,0 +1,1 @@
+{"task_id": "map_036", "input_file": "input/map_036.csv", "input_size_kb": 42.36, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"kafka": 100}, "exception_stats": {}, "hour_distribution": {"hour_14": 100}}

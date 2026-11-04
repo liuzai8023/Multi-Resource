@@ -1,0 +1,1 @@
+{"task_id": "map_050", "input_file": "input/map_050.csv", "input_size_kb": 110.69, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dosmServer": 100}, "exception_stats": {}, "hour_distribution": {"hour_8": 4, "hour_9": 35, "hour_10": 36, "hour_11": 25}}

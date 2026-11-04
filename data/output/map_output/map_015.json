@@ -1,0 +1,1 @@
+{"task_id": "map_015", "input_file": "input/map_015.csv", "input_size_kb": 145.81, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"douc": 53, "doiaPlatform": 47}, "exception_stats": {}, "hour_distribution": {"hour_3": 4, "hour_6": 2, "hour_7": 12, "hour_8": 32, "hour_9": 12, "hour_12": 12, "hour_13": 5, "hour_2": 10, "hour_1": 1, "hour_10": 10}}

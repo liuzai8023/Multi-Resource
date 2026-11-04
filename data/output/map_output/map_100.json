@@ -1,0 +1,1 @@
+{"task_id": "map_100", "input_file": "input/map_100.csv", "input_size_kb": 704.13, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dodiServer": 4, "dosmServerBoot": 86, "gatewayServer": 7, "kafka": 3}, "exception_stats": {}, "hour_distribution": {"hour_8": 6, "hour_9": 66, "hour_10": 25, "hour_16": 2, "hour_7": 1}}

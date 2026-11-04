@@ -1,0 +1,1 @@
+{"task_id": "map_099", "input_file": "input/map_099.csv", "input_size_kb": 387.58, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dosmServerBoot": 83, "kafka": 1, "dodiServer": 14, "gatewayServer": 2}, "exception_stats": {}, "hour_distribution": {"hour_8": 100}}

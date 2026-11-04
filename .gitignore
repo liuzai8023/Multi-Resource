@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+
+# Credentials - never commit
+config/aliyun_config.json
+aliyun_config.json
+*.key
+*.pem
+.env
+*.secret
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs and temp files
+logs/
+*.log
+temp/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db

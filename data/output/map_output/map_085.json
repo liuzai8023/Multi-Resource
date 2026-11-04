@@ -1,0 +1,1 @@
+{"task_id": "map_085", "input_file": "input/map_085.csv", "input_size_kb": 344.87, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"cmdbServer": 52, "cmdbRpcConsumer": 1, "dosmServerBoot": 39, "dolaServer": 7, "gatewayServer": 1}, "exception_stats": {}, "hour_distribution": {"hour_2": 50, "hour_3": 50}}
