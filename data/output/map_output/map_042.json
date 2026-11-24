@@ -1,1 +1,0 @@
-{"task_id": "map_042", "input_file": "input/map_042.csv", "input_size_kb": 221.08, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"zookeeper": 73, "dosmWeb": 27}, "exception_stats": {}, "hour_distribution": {"hour_10": 17, "hour_12": 12, "hour_13": 16, "hour_14": 12, "hour_1": 16, "hour_2": 22, "hour_3": 5}}

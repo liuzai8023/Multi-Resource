@@ -1,1 +1,0 @@
-{"task_id": "map_002", "input_file": "input/map_002.csv", "input_size_kb": 41.76, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"spark": 18, "OpenStack": 82}, "exception_stats": {}, "hour_distribution": {"hour_12": 29, "hour_3": 1, "hour_7": 1, "hour_13": 41, "hour_15": 9, "hour_16": 2, "hour_14": 3, "hour_11": 14}}

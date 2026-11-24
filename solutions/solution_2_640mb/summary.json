@@ -1,0 +1,28 @@
+{
+ "solution_id": 2,
+ "config": {
+  "solution_id": 2,
+  "mapper_memory_mb": 640,
+  "mapper_concurrency": 55,
+  "objects_per_reducer": 11,
+  "num_reduce_tasks": 5,
+  "reducer_memory_mb": 512
+ },
+ "run_times_s": [
+  20.814995527267456,
+  18.634303092956543,
+  19.362816333770752
+ ],
+ "run_costs_cny": [
+  0.03553,
+  0.03552,
+  0.03582
+ ],
+ "mean_time_s": 19.6,
+ "predicted_time_s": 19.69,
+ "time_accuracy_pct": 99.6,
+ "mean_billed_cost_cny": 0.03562,
+ "predicted_cost_cny": 0.03461,
+ "cost_accuracy_pct": 97.2,
+ "note": "mean over 3 runs; warm-up discarded (3-run average)"
+}

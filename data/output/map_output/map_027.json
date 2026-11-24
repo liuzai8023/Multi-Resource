@@ -1,1 +1,0 @@
-{"task_id": "map_027", "input_file": "input/map_027.csv", "input_size_kb": 244.91, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"kafka": 77, "zookeeper": 5, "clickhouse": 3, "doiaPlatform": 10, "gatewayServer": 5}, "exception_stats": {}, "hour_distribution": {"hour_12": 56, "hour_13": 44}}

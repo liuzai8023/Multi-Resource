@@ -1,0 +1,97 @@
+[
+ {
+  "success": true,
+  "task_id": "reduce_002",
+  "result": {
+   "maps_processed": 11,
+   "output_file": "reduce_output_taobao/reduce_002.json",
+   "output_size_kb": 1.59,
+   "records_aggregated": 20128365,
+   "reduce_id": "reduce_002",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.0002,
+    "oss_read": 0.1461,
+    "oss_write": 0.0279,
+    "total": 0.1747
+   }
+  }
+ },
+ {
+  "success": true,
+  "task_id": "reduce_004",
+  "result": {
+   "maps_processed": 11,
+   "output_file": "reduce_output_taobao/reduce_004.json",
+   "output_size_kb": 1.59,
+   "records_aggregated": 20132174,
+   "reduce_id": "reduce_004",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.0002,
+    "oss_read": 0.1294,
+    "oss_write": 0.0204,
+    "total": 0.1504
+   }
+  }
+ },
+ {
+  "success": true,
+  "task_id": "reduce_003",
+  "result": {
+   "maps_processed": 11,
+   "output_file": "reduce_output_taobao/reduce_003.json",
+   "output_size_kb": 1.59,
+   "records_aggregated": 20130446,
+   "reduce_id": "reduce_003",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.0002,
+    "oss_read": 0.187,
+    "oss_write": 0.0104,
+    "total": 0.1979
+   }
+  }
+ },
+ {
+  "success": true,
+  "task_id": "reduce_005",
+  "result": {
+   "maps_processed": 11,
+   "output_file": "reduce_output_taobao/reduce_005.json",
+   "output_size_kb": 1.59,
+   "records_aggregated": 19633879,
+   "reduce_id": "reduce_005",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.0002,
+    "oss_read": 0.1972,
+    "oss_write": 0.031,
+    "total": 0.2288
+   }
+  }
+ },
+ {
+  "success": true,
+  "task_id": "reduce_001",
+  "result": {
+   "maps_processed": 11,
+   "output_file": "reduce_output_taobao/reduce_001.json",
+   "output_size_kb": 1.59,
+   "records_aggregated": 20125943,
+   "reduce_id": "reduce_001",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.0002,
+    "oss_read": 0.2582,
+    "oss_write": 0.0468,
+    "total": 0.3056
+   }
+  }
+ }
+]

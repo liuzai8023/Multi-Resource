@@ -1,1 +1,0 @@
-{"task_id": "map_065", "input_file": "input/map_065.csv", "input_size_kb": 453.49, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dosmServerBoot": 81, "gatewayServer": 4, "kafka": 12, "nbdServer": 2, "zookeeper": 1}, "exception_stats": {}, "hour_distribution": {"hour_2": 3, "hour_3": 22, "hour_4": 7, "hour_5": 1, "hour_6": 67}}

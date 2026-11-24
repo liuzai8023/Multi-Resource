@@ -1,0 +1,97 @@
+[
+  {
+    "success": true,
+    "task_id": "reduce_004",
+    "result": {
+      "maps_processed": 11,
+      "output_file": "reduce_output_taobao/reduce_004.json",
+      "output_size_kb": 1.59,
+      "records_aggregated": 20132174,
+      "reduce_id": "reduce_004",
+      "statusCode": 200,
+      "task_type": "reduce",
+      "timing": {
+        "aggregate": 0.0003,
+        "oss_read": 0.1361,
+        "oss_write": 0.0151,
+        "total": 0.1519
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "reduce_002",
+    "result": {
+      "maps_processed": 11,
+      "output_file": "reduce_output_taobao/reduce_002.json",
+      "output_size_kb": 1.59,
+      "records_aggregated": 20128365,
+      "reduce_id": "reduce_002",
+      "statusCode": 200,
+      "task_type": "reduce",
+      "timing": {
+        "aggregate": 0.0002,
+        "oss_read": 0.1254,
+        "oss_write": 0.0152,
+        "total": 0.1413
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "reduce_003",
+    "result": {
+      "maps_processed": 11,
+      "output_file": "reduce_output_taobao/reduce_003.json",
+      "output_size_kb": 1.59,
+      "records_aggregated": 20130446,
+      "reduce_id": "reduce_003",
+      "statusCode": 200,
+      "task_type": "reduce",
+      "timing": {
+        "aggregate": 0.0002,
+        "oss_read": 0.1473,
+        "oss_write": 0.0155,
+        "total": 0.1634
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "reduce_005",
+    "result": {
+      "maps_processed": 11,
+      "output_file": "reduce_output_taobao/reduce_005.json",
+      "output_size_kb": 1.59,
+      "records_aggregated": 19633879,
+      "reduce_id": "reduce_005",
+      "statusCode": 200,
+      "task_type": "reduce",
+      "timing": {
+        "aggregate": 0.0002,
+        "oss_read": 0.2822,
+        "oss_write": 0.0361,
+        "total": 0.319
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "reduce_001",
+    "result": {
+      "maps_processed": 11,
+      "output_file": "reduce_output_taobao/reduce_001.json",
+      "output_size_kb": 1.59,
+      "records_aggregated": 20125943,
+      "reduce_id": "reduce_001",
+      "statusCode": 200,
+      "task_type": "reduce",
+      "timing": {
+        "aggregate": 0.0002,
+        "oss_read": 0.2037,
+        "oss_write": 0.0846,
+        "total": 0.289
+      }
+    }
+  }
+]

@@ -1,1 +1,0 @@
-{"task_id": "map_082", "input_file": "input/map_082.csv", "input_size_kb": 469.87, "total_records": 100, "level_stats": {"INFO": 100}, "source_stats": {"dosmServerBoot": 97, "doucSso": 1, "doucApi": 1, "doiaOfflineServer": 1}, "exception_stats": {}, "hour_distribution": {"hour_9": 18, "hour_10": 75, "hour_11": 7}}

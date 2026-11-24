@@ -1,9 +1,0 @@
-ANSGA-II Pareto Front - 28MB Log Analysis
-Execution Time: 5068 ms
-Solutions: 5
-
-Sol 1: Cost=0.00028724, Time=10521.96
-Sol 2: Cost=0.00026224, Time=11407.76
-Sol 3: Cost=0.00033724, Time=10079.07
-Sol 4: Cost=0.00024724, Time=14065.14
-Sol 5: Cost=0.00031224, Time=10226.70

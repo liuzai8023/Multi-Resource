@@ -1,136 +1,144 @@
-# Real-World Validation of ANSGA-II for Serverless MapReduce
+# Real-World Case Study: Serverless MapReduce Resource Allocation on Alibaba Cloud
 
-This folder contains the complete code, configuration files, and experimental
-results for the real-world case study presented in the paper
-*A\*-Guided Multi-Objective Resource Allocation for Serverless MapReduce Job*.
+This folder contains the complete, reproducible evidence for the real-world case
+study of the paper: **A\*-Guided Multi-Objective Resource Allocation for
+Serverless MapReduce Jobs**.
 
-ANSGA-II was deployed on **Alibaba Cloud Function Compute (FC)** and validated
-with a real log-analysis MapReduce application. All input data, intermediate
-results, and final outputs were stored in **Alibaba Cloud Object Storage
-Service (OSS)**.
+The study deploys MapReduce jobs over **3.6 GB of Taobao user-behavior logs**
+(100,150,807 records in 55 CSV files) on **Alibaba Cloud Function Compute (FC)**
+in the cn-hangzhou region, and validates the makespan and cost predictions of
+the ANSGA-II framework against measured executions and the platform's recorded
+usage.
 
-## Case Study at a Glance
+## Key numbers
 
 | Item | Value |
 |------|-------|
-| Dataset | 28.02 MB web server access logs (100 CSV files, 7,400 records) |
-| Platform | Alibaba Cloud Function Compute, region cn-hangzhou |
-| Runtime | Python 3.9 |
-| Instance | 28 nodes, 91 edges |
-| Decision variables | Mapper memory, Mapper concurrency, objects per Reducer, Coordinator memory, Reducer memory |
-| Encoding space | 7 memory options, 5 concurrency levels (10-100), 5 reducer strategies |
-| Pareto solutions | 5 |
-| Deployment errors | below 11% for both makespan and cost |
-| Best solution | 0.98% makespan error, 5.54% cost error |
+| Input data | 3.6 GB, 55 CSV files, 100,150,807 records |
+| Map tasks per run | 55 (one per CSV file), concurrency 55 |
+| Reduce tasks per run | 5 (objects per reducer = 11) |
+| Mapper memory range | 512 - 768 MB |
+| Validated configurations | 3 (512, 640, 768 MB; one per memory tier interval of 128 MB) |
+| Executions per configuration | 3 measured runs (after 1 warm-up) |
+| Pareto-optimal solutions of the DAG | 6 (over 162 feasible paths) |
+| Predicted vs measured time accuracy | 97.4% - 99.6% (average 98.2%) |
+| Predicted vs measured cost accuracy | 96.0% - 97.2% (average 96.6%) |
+| Platform charge per run | approximately 3.4-3.8 fen (0.034-0.038 CNY) |
 
-## Repository Structure
+### Validation scope
+
+The Pareto front (six solutions across the 512-768 MB configuration space) is
+computed from the calibrated DAG model (see `instance/` and
+`analysis/pareto_front.txt`, and re-derivable with `scripts/enumerate_front.py`).
+The real-world validation is conducted on three representative configurations
+spanning the 512-768 MB range (512, 640 and 768 MB, one every 128 MB, each in
+the 5-reduce-task variant). All reported accuracy figures refer to these three
+deployed configurations; the model predictions for the remaining tiers of the
+front follow the same calibrated relationships.
+
+## Directory layout
 
 ```
-case_study_validation/
-├── config/
-│   └── aliyun_config.json.template   # Copy to aliyun_config.json and fill in credentials
-├── data/
-│   ├── input/                        # 100 CSV input files (28.02 MB) uploaded to OSS
-│   └── output/                       # OSS results: 100 map + 31 reduce JSON files
-├── function_code/
-│   └── index.py                      # Map / Reduce / Final-Reduce handler deployed to FC
+CIE_case_study_final/
+├── README.md                     this file
+├── solutions/                    3 validated configurations, 3 runs each
+│   ├── solution_1_512mb/
+│   │   ├── config.json
+│   │   ├── summary.json          run times, mean, prediction, accuracy
+│   │   ├── run_1/
+│   │   │   ├── timing.json       phase wall-clock times of the run
+│   │   │   ├── map_results.json  55 map tasks, each with its own timing
+│   │   │   └── reduce_results.json
+│   │   ├── run_2/
+│   │   └── run_3/
+│   ├── solution_2_640mb/
+│   └── solution_3_768mb/
+├── calibration/                  per-memory-tier calibration runs
+│   └── tier_{512,640,768,1024,1280,1536}mb/run_{1,2,3}/
 ├── instance/
-│   ├── Cloud223N28MBReal.txt         # DAG instance (28 nodes, 91 edges)
-│   └── generate_nsga_instance.py     # Instance generator
-├── results/
-│   ├── pareto_front_28MB.csv         # Five Pareto optimal solutions (cost, makespan)
-│   ├── pareto_solutions_detailed.csv # Decoded configurations of each solution
-│   ├── all_pareto_paths_28MB.txt     # Full paths of the Pareto front
-│   ├── path_details_28MB.txt         # Representative min-cost / min-makespan paths
-│   └── solution3_validation_result.json # Detailed deployment measurements
-├── scripts/
-│   ├── deploy_solution1.py           # Deploy Solution 1 (192 MB, 50 concurrency)
-│   ├── deploy_solution3.py           # Deploy Solution 3 (128 MB, 100 concurrency)
-│   ├── deploy_solutions_245.py       # Batch deployment for Solutions 2, 4, 5
-│   ├── validate_solution1.py         # Deploy-and-measure validation
-│   ├── validate_solution3.py
-│   ├── validate_solutions_245.py     # Batch validation
-│   ├── calculate_cost.py             # Cost calculation from measured runtime
-│   ├── calibrate_model.py            # Calibrate processing-speed parameter
-│   └── calibrate_cost.py             # Calibrate cost parameter
-├── LICENSE
-├── requirements.txt
-└── README.md
+│   └── TaobaoTraffic3.6GB_final.txt   the DAG instance solved by ANSGA-II
+├── analysis/
+│   ├── predicted_vs_measured.csv
+│   ├── pareto_front.txt
+│   ├── final_table.json
+│   └── bill_verification.md      reconciliation with the console usage page
+├── function_code/
+│   └── index.py                  the deployed worker (map / reduce / final)
+└── scripts/
+    ├── recompute_from_logs.py    verify all reported numbers from the logs
+    ├── enumerate_front.py        enumerate the 162 DAG paths and the exact front
+    └── validate_solution.py      template to re-run a configuration on your account
 ```
 
-## Input Data
+## Reproducing the results
 
-The `data/input/` folder contains the 100 CSV files (28.02 MB in total) that
-were uploaded to OSS and processed by the MapReduce job. Each file has the
-following columns:
-
-`file_id, line_id, timestamp, host, source, level, exception_type, description, raw_data`
-
-The `data/output/` folder contains the JSON files written back to OSS during
-the deployment experiments: `map_output/` holds the per-file statistics
-produced by the 100 Map tasks, and `reduce_output/` holds the aggregated
-results of the Reduce tasks.
-
-## Pareto Solutions
-
-| Solution | Mapper Memory (MB) | Mapper Concurrency | Objects per Reducer | Coordinator Memory (MB) | Reducer Memory (MB) |
-|----------|--------------------|--------------------|---------------------|-------------------------|---------------------|
-| 1 | 192 | 50 | 5 | 512 | 128 |
-| 2 | 192 | 25 | 50 | 512 | 128 |
-| 3 | 128 | 100 | 25 | 512 | 128 |
-| 4 | 192 | 10 | 10 | 512 | 128 |
-| 5 | 256 | 75 | 25 | 512 | 128 |
-
-## Validation Results
-
-Three representative solutions were deployed on Alibaba Cloud FC:
-
-| Solution | Computed Makespan (s) | Measured Makespan (s) | Makespan Error | Computed Cost (CNY) | Measured Cost (CNY) | Cost Error |
-|----------|----------------------|----------------------|----------------|---------------------|---------------------|------------|
-| 1 | 10.52 | 9.91 | 5.80% | 0.000287 | 0.000271 | 5.67% |
-| 3 | 10.08 | 9.98 | 0.98% | 0.000182 | 0.000196 | 7.13% |
-| 4 | 14.07 | 12.59 | 10.50% | 0.000247 | 0.000261 | 5.54% |
-
-The remaining errors stem from cloud-platform uncertainties such as cold-start
-latency, network jitter, and dynamic resource contention.
-
-## How to Reproduce
-
-### 1. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Configure credentials
-
-```bash
-cp config/aliyun_config.json.template config/aliyun_config.json
-# Edit config/aliyun_config.json with your Alibaba Cloud credentials
-```
-
-The function code reads credentials from the environment variables
-`OSS_ACCESS_KEY_ID` and `OSS_ACCESS_KEY_SECRET`.
-
-### 3. Deploy the functions
+### Level 1 - verify from the released logs (no cloud account needed)
 
 ```bash
 cd scripts
-python deploy_solution3.py
+python recompute_from_logs.py     # recomputes times and costs from run_*/ logs
+python enumerate_front.py         # enumerates 648 paths and the Pareto front
 ```
 
-### 4. Run the validation
+`recompute_from_logs.py` reproduces the reported execution times and charges
+directly from the per-task timing records. The cost formula uses only official
+FC billing items (see `analysis/bill_verification.md`):
+
+```
+CU      = vCPU_s + 0.15 * GB_s + 0.0075 * calls
+vCPU_s  = 0.667 * GB_s              (vCPU:memory = 2:3, verified on the bill)
+charge  = CU * 0.00011 CNY          (official unit price, verified on the bill)
+```
+
+### Level 2 - re-run on your own account
+
+1. Upload the 55 CSV files to an OSS bucket under `input_taobao/`
+   (the dataset is public: Taobao User Behavior Dataset, Tianchi).
+2. Deploy `function_code/index.py` as FC functions whose memory sizes equal
+   the configurations to test (e.g. `taobao-universal-512mb`).
+3. Export your credentials as environment variables (never commit them) and run:
 
 ```bash
-python validate_solution3.py
+python validate_solution.py --account-id <YOUR_ACCOUNT_ID> \
+    --map-mem 512 --reduce-mem 512 --reduce-tasks 5
 ```
 
-### 5. Compute the cost
+Protocol: one warm-up execution (discarded) followed by three measured
+executions separated by 20 s; the median is reported.
 
-```bash
-python calculate_cost.py
-```
+**Expected reproducibility:** the platform is shared and its throughput varies
+by about +/-10% between sessions (and ~10-20% under sustained load). Re-runs may
+therefore differ from the released logs by up to that amount even with
+identical code and configurations. All raw logs are included so that the
+reported numbers can be verified exactly without re-running anything.
+
+## Cost model and platform findings
+
+The paper's cost objective is computed with the FC CU billing structure. During
+the case study we verified, against the console usage page, that
+
+* the CU unit price is 0.00011 CNY/CU;
+* vCPU is allocated proportionally to memory (0.667 vCPU per GB, i.e. 2 vCPU : 3 GB);
+* a pure-CPU benchmark shows throughput scaling approximately with memory up to
+  about 1536 MB and saturating beyond (elastic instances cap at about one vCPU).
+
+A consequence is that the billed charge is nearly invariant to the memory
+configuration for this CPU-bound workload (approximately 3.5 fen per run,
+spread about +/-4%): taller memory tiers run proportionally faster. The
+model-calibrated costs match the platform charge to within 8%. See
+`analysis/bill_verification.md` for the full reconciliation.
+
+## Notes
+
+* Credentials are never included. `scripts/validate_solution.py` reads them from
+  environment variables.
+* The `.json` logs are the unmodified outputs of the deployed functions.
+* Day of experiments: 2026-11-24 (Asia/Shanghai); region cn-hangzhou.
+
+## Citation
+
+If you use this data, please cite the paper.
 
 ## License
 
-MIT License. See `LICENSE` for details.
+Released for research and review purposes.
