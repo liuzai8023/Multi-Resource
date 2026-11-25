@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Enumerate all paths of the 3-tier case-study DAG (162 paths) and the exact front."""
+"""Enumerate all 648 paths of the case-study DAG and extract the exact Pareto front."""
 import os
-TIERS=[512,640,768]
-CONC_NODES={1:4,5:5,10:6,11:7,20:8,55:9}
-OBJ_NODES={5:10,11:11,55:12}
-COORD={10:13,11:14,12:15}
-RED_NODES={512:16,640:17,768:18}
-SINK=19
+TIERS=[512,640,768,1024,1280,1536]
+CONC_NODES={1:7,5:8,10:9,11:10,20:11,55:12}
+OBJ_NODES={5:13,11:14,55:15}
+COORD={13:16,14:17,15:18}
+RED_NODES={512:19,640:20,768:21,1024:22,1280:23,1536:24}
+SINK=25
 def load(path):
     w={}
     for line in open(path, encoding='utf-8'):

@@ -1,0 +1,992 @@
+[
+  {
+    "success": true,
+    "task_id": "map_055",
+    "result": {
+      "output_file": "map_output_taobao/map_055.json",
+      "output_size_kb": 1.43,
+      "records_processed": 1322462,
+      "statusCode": 200,
+      "task_id": "map_055",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.6933,
+        "oss_write": 0.0413,
+        "process": 4.1783,
+        "total": 4.9133
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_026",
+    "result": {
+      "output_file": "map_output_taobao/map_026.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830696,
+      "statusCode": 200,
+      "task_id": "map_026",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1153,
+        "oss_write": 0.0105,
+        "process": 4.2464,
+        "total": 5.3726
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_053",
+    "result": {
+      "output_file": "map_output_taobao/map_053.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831561,
+      "statusCode": 200,
+      "task_id": "map_053",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.133,
+        "oss_write": 0.0425,
+        "process": 4.2114,
+        "total": 5.3874
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_002",
+    "result": {
+      "output_file": "map_output_taobao/map_002.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831124,
+      "statusCode": 200,
+      "task_id": "map_002",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2046,
+        "oss_write": 0.03,
+        "process": 4.228,
+        "total": 5.4629
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_029",
+    "result": {
+      "output_file": "map_output_taobao/map_029.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831260,
+      "statusCode": 200,
+      "task_id": "map_029",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9198,
+        "oss_write": 0.0125,
+        "process": 4.5955,
+        "total": 5.5283
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_047",
+    "result": {
+      "output_file": "map_output_taobao/map_047.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830833,
+      "statusCode": 200,
+      "task_id": "map_047",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9887,
+        "oss_write": 0.017,
+        "process": 4.8049,
+        "total": 5.8109
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_052",
+    "result": {
+      "output_file": "map_output_taobao/map_052.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831111,
+      "statusCode": 200,
+      "task_id": "map_052",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9105,
+        "oss_write": 0.0112,
+        "process": 4.8985,
+        "total": 5.8206
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_050",
+    "result": {
+      "output_file": "map_output_taobao/map_050.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831598,
+      "statusCode": 200,
+      "task_id": "map_050",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1337,
+        "oss_write": 0.0114,
+        "process": 4.6245,
+        "total": 5.77
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_022",
+    "result": {
+      "output_file": "map_output_taobao/map_022.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1822081,
+      "statusCode": 200,
+      "task_id": "map_022",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9351,
+        "oss_write": 0.0132,
+        "process": 4.8313,
+        "total": 5.78
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_024",
+    "result": {
+      "output_file": "map_output_taobao/map_024.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831349,
+      "statusCode": 200,
+      "task_id": "map_024",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9131,
+        "oss_write": 0.0127,
+        "process": 4.9703,
+        "total": 5.8965
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_003",
+    "result": {
+      "output_file": "map_output_taobao/map_003.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830844,
+      "statusCode": 200,
+      "task_id": "map_003",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1268,
+        "oss_write": 0.0305,
+        "process": 4.6928,
+        "total": 5.8506
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_046",
+    "result": {
+      "output_file": "map_output_taobao/map_046.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830888,
+      "statusCode": 200,
+      "task_id": "map_046",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1239,
+        "oss_write": 0.0226,
+        "process": 4.7736,
+        "total": 5.9206
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_023",
+    "result": {
+      "output_file": "map_output_taobao/map_023.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1829532,
+      "statusCode": 200,
+      "task_id": "map_023",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2056,
+        "oss_write": 0.0116,
+        "process": 4.6914,
+        "total": 5.909
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_049",
+    "result": {
+      "output_file": "map_output_taobao/map_049.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831317,
+      "statusCode": 200,
+      "task_id": "map_049",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2517,
+        "oss_write": 0.0317,
+        "process": 4.6173,
+        "total": 5.9011
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_005",
+    "result": {
+      "output_file": "map_output_taobao/map_005.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831069,
+      "statusCode": 200,
+      "task_id": "map_005",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.3182,
+        "oss_write": 0.0125,
+        "process": 4.6396,
+        "total": 5.9707
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_028",
+    "result": {
+      "output_file": "map_output_taobao/map_028.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831084,
+      "statusCode": 200,
+      "task_id": "map_028",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2701,
+        "oss_write": 0.0244,
+        "process": 4.6136,
+        "total": 5.9085
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_027",
+    "result": {
+      "output_file": "map_output_taobao/map_027.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831106,
+      "statusCode": 200,
+      "task_id": "map_027",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2229,
+        "oss_write": 0.0132,
+        "process": 4.8092,
+        "total": 6.0457
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_025",
+    "result": {
+      "output_file": "map_output_taobao/map_025.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831010,
+      "statusCode": 200,
+      "task_id": "map_025",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.3499,
+        "oss_write": 0.0124,
+        "process": 4.7886,
+        "total": 6.1513
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_048",
+    "result": {
+      "output_file": "map_output_taobao/map_048.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831291,
+      "statusCode": 200,
+      "task_id": "map_048",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.315,
+        "oss_write": 0.0475,
+        "process": 4.7899,
+        "total": 6.1528
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_051",
+    "result": {
+      "output_file": "map_output_taobao/map_051.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831486,
+      "statusCode": 200,
+      "task_id": "map_051",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.4117,
+        "oss_write": 0.0222,
+        "process": 4.7624,
+        "total": 6.1968
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_008",
+    "result": {
+      "output_file": "map_output_taobao/map_008.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831300,
+      "statusCode": 200,
+      "task_id": "map_008",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0003,
+        "oss_write": 0.0274,
+        "process": 5.8153,
+        "total": 6.8434
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_054",
+    "result": {
+      "output_file": "map_output_taobao/map_054.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831038,
+      "statusCode": 200,
+      "task_id": "map_054",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9951,
+        "oss_write": 0.0138,
+        "process": 5.9352,
+        "total": 6.9444
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_001",
+    "result": {
+      "output_file": "map_output_taobao/map_001.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1820085,
+      "statusCode": 200,
+      "task_id": "map_001",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9117,
+        "oss_write": 0.0122,
+        "process": 5.765,
+        "total": 6.6893
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_012",
+    "result": {
+      "output_file": "map_output_taobao/map_012.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1825368,
+      "statusCode": 200,
+      "task_id": "map_012",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9394,
+        "oss_write": 0.0224,
+        "process": 5.7993,
+        "total": 6.7615
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_030",
+    "result": {
+      "output_file": "map_output_taobao/map_030.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831398,
+      "statusCode": 200,
+      "task_id": "map_030",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0059,
+        "oss_write": 0.0231,
+        "process": 6.1387,
+        "total": 7.168
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_007",
+    "result": {
+      "output_file": "map_output_taobao/map_007.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831352,
+      "statusCode": 200,
+      "task_id": "map_007",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0414,
+        "oss_write": 0.0242,
+        "process": 6.3087,
+        "total": 7.3747
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_041",
+    "result": {
+      "output_file": "map_output_taobao/map_041.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831352,
+      "statusCode": 200,
+      "task_id": "map_041",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9465,
+        "oss_write": 0.0244,
+        "process": 6.4693,
+        "total": 7.4407
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_039",
+    "result": {
+      "output_file": "map_output_taobao/map_039.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831110,
+      "statusCode": 200,
+      "task_id": "map_039",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 0.9664,
+        "oss_write": 0.0604,
+        "process": 6.5153,
+        "total": 7.5425
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_038",
+    "result": {
+      "output_file": "map_output_taobao/map_038.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830852,
+      "statusCode": 200,
+      "task_id": "map_038",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0442,
+        "oss_write": 0.0252,
+        "process": 6.7899,
+        "total": 7.8598
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_033",
+    "result": {
+      "output_file": "map_output_taobao/map_033.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1820149,
+      "statusCode": 200,
+      "task_id": "map_033",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.091,
+        "oss_write": 0.0262,
+        "process": 6.7289,
+        "total": 7.8464
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_018",
+    "result": {
+      "output_file": "map_output_taobao/map_018.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831337,
+      "statusCode": 200,
+      "task_id": "map_018",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1256,
+        "oss_write": 0.0165,
+        "process": 6.9321,
+        "total": 8.0747
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_014",
+    "result": {
+      "output_file": "map_output_taobao/map_014.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831312,
+      "statusCode": 200,
+      "task_id": "map_014",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0993,
+        "oss_write": 0.0121,
+        "process": 6.8777,
+        "total": 7.9896
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_009",
+    "result": {
+      "output_file": "map_output_taobao/map_009.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831181,
+      "statusCode": 200,
+      "task_id": "map_009",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1502,
+        "oss_write": 0.0122,
+        "process": 6.9273,
+        "total": 8.0901
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_020",
+    "result": {
+      "output_file": "map_output_taobao/map_020.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1832059,
+      "statusCode": 200,
+      "task_id": "map_020",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1431,
+        "oss_write": 0.0131,
+        "process": 7.0946,
+        "total": 8.2512
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_037",
+    "result": {
+      "output_file": "map_output_taobao/map_037.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830859,
+      "statusCode": 200,
+      "task_id": "map_037",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.086,
+        "oss_write": 0.0145,
+        "process": 7.1833,
+        "total": 8.2842
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_013",
+    "result": {
+      "output_file": "map_output_taobao/map_013.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831119,
+      "statusCode": 200,
+      "task_id": "map_013",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2552,
+        "oss_write": 0.0429,
+        "process": 7.0005,
+        "total": 8.2992
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_032",
+    "result": {
+      "output_file": "map_output_taobao/map_032.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830885,
+      "statusCode": 200,
+      "task_id": "map_032",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1407,
+        "oss_write": 0.0259,
+        "process": 7.0925,
+        "total": 8.2596
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_031",
+    "result": {
+      "output_file": "map_output_taobao/map_031.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831977,
+      "statusCode": 200,
+      "task_id": "map_031",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.174,
+        "oss_write": 0.0231,
+        "process": 6.9993,
+        "total": 8.1968
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_017",
+    "result": {
+      "output_file": "map_output_taobao/map_017.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830943,
+      "statusCode": 200,
+      "task_id": "map_017",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1006,
+        "oss_write": 0.0135,
+        "process": 7.1153,
+        "total": 8.2298
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_011",
+    "result": {
+      "output_file": "map_output_taobao/map_011.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1826264,
+      "statusCode": 200,
+      "task_id": "map_011",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1886,
+        "oss_write": 0.0142,
+        "process": 7.3095,
+        "total": 8.5129
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_035",
+    "result": {
+      "output_file": "map_output_taobao/map_035.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831206,
+      "statusCode": 200,
+      "task_id": "map_035",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0879,
+        "oss_write": 0.0376,
+        "process": 7.3417,
+        "total": 8.4677
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_044",
+    "result": {
+      "output_file": "map_output_taobao/map_044.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1821116,
+      "statusCode": 200,
+      "task_id": "map_044",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2302,
+        "oss_write": 0.0475,
+        "process": 7.2557,
+        "total": 8.5338
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_043",
+    "result": {
+      "output_file": "map_output_taobao/map_043.json",
+      "output_size_kb": 1.46,
+      "records_processed": 1831051,
+      "statusCode": 200,
+      "task_id": "map_043",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0424,
+        "oss_write": 0.0148,
+        "process": 7.5015,
+        "total": 8.5592
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_045",
+    "result": {
+      "output_file": "map_output_taobao/map_045.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830294,
+      "statusCode": 200,
+      "task_id": "map_045",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0845,
+        "oss_write": 0.0135,
+        "process": 7.4861,
+        "total": 8.5844
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_015",
+    "result": {
+      "output_file": "map_output_taobao/map_015.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830977,
+      "statusCode": 200,
+      "task_id": "map_015",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1263,
+        "oss_write": 0.0118,
+        "process": 7.183,
+        "total": 8.3215
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_021",
+    "result": {
+      "output_file": "map_output_taobao/map_021.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831281,
+      "statusCode": 200,
+      "task_id": "map_021",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.179,
+        "oss_write": 0.0131,
+        "process": 7.3479,
+        "total": 8.5403
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_040",
+    "result": {
+      "output_file": "map_output_taobao/map_040.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830999,
+      "statusCode": 200,
+      "task_id": "map_040",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1597,
+        "oss_write": 0.0385,
+        "process": 7.2004,
+        "total": 8.399
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_034",
+    "result": {
+      "output_file": "map_output_taobao/map_034.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831032,
+      "statusCode": 200,
+      "task_id": "map_034",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1426,
+        "oss_write": 0.0126,
+        "process": 7.4885,
+        "total": 8.6443
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_036",
+    "result": {
+      "output_file": "map_output_taobao/map_036.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831186,
+      "statusCode": 200,
+      "task_id": "map_036",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.0758,
+        "oss_write": 0.0127,
+        "process": 7.5118,
+        "total": 8.6007
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_010",
+    "result": {
+      "output_file": "map_output_taobao/map_010.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831299,
+      "statusCode": 200,
+      "task_id": "map_010",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1406,
+        "oss_write": 0.0224,
+        "process": 7.4971,
+        "total": 8.6606
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_006",
+    "result": {
+      "output_file": "map_output_taobao/map_006.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830572,
+      "statusCode": 200,
+      "task_id": "map_006",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1765,
+        "oss_write": 0.0619,
+        "process": 7.4465,
+        "total": 8.6855
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_016",
+    "result": {
+      "output_file": "map_output_taobao/map_016.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830730,
+      "statusCode": 200,
+      "task_id": "map_016",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1393,
+        "oss_write": 0.0703,
+        "process": 7.3142,
+        "total": 8.5244
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_019",
+    "result": {
+      "output_file": "map_output_taobao/map_019.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831158,
+      "statusCode": 200,
+      "task_id": "map_019",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.1391,
+        "oss_write": 0.0287,
+        "process": 7.6207,
+        "total": 8.7889
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_042",
+    "result": {
+      "output_file": "map_output_taobao/map_042.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1831411,
+      "statusCode": 200,
+      "task_id": "map_042",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.3263,
+        "oss_write": 0.0255,
+        "process": 7.8231,
+        "total": 9.1754
+      }
+    }
+  },
+  {
+    "success": true,
+    "task_id": "map_004",
+    "result": {
+      "output_file": "map_output_taobao/map_004.json",
+      "output_size_kb": 1.45,
+      "records_processed": 1830853,
+      "statusCode": 200,
+      "task_id": "map_004",
+      "task_type": "map",
+      "timing": {
+        "oss_read": 1.2042,
+        "oss_write": 0.0259,
+        "process": 7.5484,
+        "total": 8.7791
+      }
+    }
+  }
+]

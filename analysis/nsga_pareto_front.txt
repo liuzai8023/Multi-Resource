@@ -1,0 +1,10 @@
+ANSGA-II Pareto Front - Taobao 3.6 GB case study (ANSGA-II output)
+Execution Time: 5051 ms
+Solutions: 6
+
+Sol 1: Cost=0.03387707, Time=23.22
+Sol 2: Cost=0.03780684, Time=11.46
+Sol 3: Cost=0.03438483, Time=11.99
+Sol 4: Cost=0.03782789, Time=11.36
+Sol 5: Cost=0.03436378, Time=12.09
+Sol 6: Cost=0.03389812, Time=23.12

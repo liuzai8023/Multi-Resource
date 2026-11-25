@@ -19,10 +19,10 @@
   0.03582
  ],
  "mean_time_s": 19.6,
- "predicted_time_s": 19.69,
+ "model_time_s": 19.69,
  "time_accuracy_pct": 99.6,
- "mean_billed_cost_cny": 0.03562,
- "predicted_cost_cny": 0.03461,
+ "mean_cost_cny": 0.03562,
+ "model_cost_cny": 0.03461,
  "cost_accuracy_pct": 97.2,
- "note": "mean over 3 runs; warm-up discarded (3-run average)"
+ "note": "mean over 3 runs; warm-up discarded"
 }

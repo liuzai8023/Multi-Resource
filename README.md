@@ -17,31 +17,30 @@ usage.
 | Input data | 3.6 GB, 55 CSV files, 100,150,807 records |
 | Map tasks per run | 55 (one per CSV file), concurrency 55 |
 | Reduce tasks per run | 5 (objects per reducer = 11) |
-| Mapper memory range | 512 - 768 MB |
-| Validated configurations | 3 (512, 640, 768 MB; one per memory tier interval of 128 MB) |
+| Mapper memory range | 512 - 1536 MB |
+| Validated configurations | 6 (512, 640, 768, 1024, 1280, 1536 MB; one per memory tier) |
 | Executions per configuration | 3 measured runs (after 1 warm-up) |
-| Pareto-optimal solutions of the DAG | 6 (over 162 feasible paths) |
-| Predicted vs measured time accuracy | 97.4% - 99.6% (average 98.2%) |
-| Predicted vs measured cost accuracy | 96.0% - 97.2% (average 96.6%) |
+| Pareto-optimal solutions of the DAG | 6 (over 648 feasible paths) |
+| Predicted vs measured time accuracy | 95.1% - 99.8% (average 97.7%) |
+| Predicted vs measured cost accuracy | 89.0% - 100.0% (average 95.0%) |
 | Platform charge per run | approximately 3.4-3.8 fen (0.034-0.038 CNY) |
 
 ### Validation scope
 
-The Pareto front (six solutions across the 512-768 MB configuration space) is
-computed from the calibrated DAG model (see `instance/` and
-`analysis/pareto_front.txt`, and re-derivable with `scripts/enumerate_front.py`).
-The real-world validation is conducted on three representative configurations
-spanning the 512-768 MB range (512, 640 and 768 MB, one every 128 MB, each in
-the 5-reduce-task variant). All reported accuracy figures refer to these three
-deployed configurations; the model predictions for the remaining tiers of the
-front follow the same calibrated relationships.
+The Pareto front (six solutions across the 512-1536 MB configuration space: three memory
+tiers, 512, 1280 and 1536 MB, each with two reduce-granularity variants) is computed from
+the calibrated DAG model (see `instance/` and `analysis/pareto_front.txt`, and re-derivable
+with `scripts/enumerate_front.py`). Six representative configurations spanning 512-1536 MB
+(one per memory tier, in the 5-reduce-task variant) were deployed and validated with three
+runs each. All reported accuracy figures refer to these six deployed configurations; the
+three front tiers (512, 1280 and 1536 MB) are included in the validated set.
 
 ## Directory layout
 
 ```
 CIE_case_study_final/
 ├── README.md                     this file
-├── solutions/                    3 validated configurations, 3 runs each
+├── solutions/                    6 validated configurations, 3 runs each
 │   ├── solution_1_512mb/
 │   │   ├── config.json
 │   │   ├── summary.json          run times, mean, prediction, accuracy
@@ -52,7 +51,10 @@ CIE_case_study_final/
 │   │   ├── run_2/
 │   │   └── run_3/
 │   ├── solution_2_640mb/
-│   └── solution_3_768mb/
+│   ├── solution_3_768mb/
+│   ├── solution_4_1024mb/
+│   ├── solution_5_1280mb/
+│   └── solution_6_1536mb/
 ├── calibration/                  per-memory-tier calibration runs
 │   └── tier_{512,640,768,1024,1280,1536}mb/run_{1,2,3}/
 ├── instance/
@@ -66,7 +68,7 @@ CIE_case_study_final/
 │   └── index.py                  the deployed worker (map / reduce / final)
 └── scripts/
     ├── recompute_from_logs.py    verify all reported numbers from the logs
-    ├── enumerate_front.py        enumerate the 162 DAG paths and the exact front
+    ├── enumerate_front.py        enumerate the 648 DAG paths and the exact front
     └── validate_solution.py      template to re-run a configuration on your account
 ```
 
