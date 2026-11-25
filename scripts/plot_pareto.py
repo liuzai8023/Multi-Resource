@@ -40,7 +40,7 @@ for mem,(t,c) in val.items():
     ax.annotate(f'{mem} MB',(t,c*1000),xytext=offs[mem],textcoords='offset points',
                 fontsize=7.5,color='#d62728',fontweight='bold')
 ax.scatter([],[],s=42,marker='s',facecolors='#d62728',edgecolors='k',label='Validated configurations',zorder=5)
-ax.set_xlabel('Makespan (s)'); ax.set_ylabel(r'Cost ($10^{-3}$ \$)')
+ax.set_xlabel('Makespan (s)'); ax.set_ylabel(r'Cost ($10^{-3}$ CNY)')
 ax.set_xlim(14.5,25); ax.set_ylim(33,36)
 ax.grid(True,linestyle='--',linewidth=0.4,alpha=0.5)
 ax.legend(loc='upper right',fontsize=7,framealpha=0.9)

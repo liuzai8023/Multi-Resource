@@ -16,7 +16,7 @@ x = np.arange(3); w = 0.34
 
 for ax, pv, mv, acc, ylab, ylim, tag in [
     (axes[0], pred_t, meas_t, acc_t, 'Execution time (s)', 26, '(a)'),
-    (axes[1], pred_c, meas_c, acc_c, r'Cost ($10^{-3}$ \$)', 40, '(b)')]:
+    (axes[1], pred_c, meas_c, acc_c, r'Cost ($10^{-3}$ CNY)', 40, '(b)')]:
     b1 = ax.bar(x - w/2, pv, w, color=colors[0], edgecolor='black', linewidth=0.5,
                 label='Predicted', zorder=3)
     b2 = ax.bar(x + w/2, mv, w, color=colors[1], edgecolor='black', linewidth=0.5,
