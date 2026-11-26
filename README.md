@@ -18,23 +18,25 @@ usage.
 | Map tasks per run | 55 (one per CSV file), concurrency 55 |
 | Reduce tasks per run | 5 (objects per reducer = 11) |
 | Mapper memory range | 512 - 1536 MB |
-| Validated configurations | 6 Pareto solutions (512, 1280, 1536 MB x 5/1 reduce tasks) + 3 tier measurements (640, 768, 1024 MB) |
+| Validated configurations | 6 Pareto solutions (512, 1280, 1536 MB x 5/1 reduce tasks) + 3 tier measurements; the paper reports three of them |
 | Executions per configuration | 3 measured runs (after 1 warm-up) |
 | Pareto-optimal solutions of the DAG | 6 (over 648 feasible paths) |
-| Model-solved vs measured time accuracy | 95.1% - 99.8% (average 98.3%) |
-| Model-solved vs measured cost accuracy | 89.0% - 96.6% (average 93.4%) |
+| Model-solved vs measured time accuracy | 95.1% - 99.8% (average 98.3%); 97.6% - 99.7% for the three reported |
+| Model-solved vs measured cost accuracy | 89.0% - 96.6% (average 93.4%); 93.7% - 96.6% for the three reported |
 | Platform charge per run | approximately 3.4-3.8 fen (0.034-0.038 CNY) |
 
 ### Validation scope
 
-The Pareto front computed from the calibrated DAG model contains six solutions
+ANSGA-II returns six Pareto-optimal solutions over the 648 feasible paths
 (three memory tiers -- 512, 1280 and 1536 MB -- each with a 5-reduce-task and a
-1-reduce-task variant; see `analysis/pareto_front.txt` and the ANSGA-II solver output
-in `analysis/nsga_pareto_front.txt`, re-derivable with `scripts/enumerate_front.py`
-and reproduced by `scripts/plot_pareto.py`). **All six Pareto solutions were deployed
-and validated** (three runs each, mean reported). Additionally, three intermediate
-tiers (640, 768 and 1024 MB) were measured for reference; these are not Pareto-optimal
-and are flagged `pareto_optimal: false` in their summaries.
+1-reduce-task variant; see `analysis/pareto_front.txt` and the ANSGA-II solver
+output in `analysis/nsga_pareto_front.txt`, re-derivable with
+`scripts/enumerate_front.py`). **All six were deployed and measured** (three runs
+each, mean reported). The paper reports three representative ones -- 512 MB with
+5 reduce tasks, and 1280 and 1536 MB each with one reduce task -- which are
+flagged `pareto_optimal: true` in their summaries; the remaining measurements
+are included here for completeness. Three additional intermediate tiers (640,
+768 and 1024 MB) were measured for reference; these are not Pareto-optimal.
 
 ## Directory layout
 
