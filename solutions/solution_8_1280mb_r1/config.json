@@ -1,0 +1,9 @@
+{
+ "solution_id": 8,
+ "mapper_memory_mb": 1280,
+ "mapper_concurrency": 55,
+ "objects_per_reducer": 55,
+ "num_reduce_tasks": 1,
+ "reducer_memory_mb": 512,
+ "pareto_optimal": true
+}

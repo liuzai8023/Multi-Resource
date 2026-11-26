@@ -6,7 +6,8 @@
   "mapper_concurrency": 55,
   "objects_per_reducer": 11,
   "num_reduce_tasks": 5,
-  "reducer_memory_mb": 512
+  "reducer_memory_mb": 512,
+  "pareto_optimal": false
  },
  "run_times_s": [
   20.814995527267456,

@@ -1,0 +1,21 @@
+[
+ {
+  "success": true,
+  "task_id": "reduce_001",
+  "result": {
+   "maps_processed": 55,
+   "output_file": "reduce_output_taobao/reduce_001.json",
+   "output_size_kb": 1.63,
+   "records_aggregated": 100150807,
+   "reduce_id": "reduce_001",
+   "statusCode": 200,
+   "task_type": "reduce",
+   "timing": {
+    "aggregate": 0.001,
+    "oss_read": 0.5761,
+    "oss_write": 0.013,
+    "total": 0.5907
+   }
+  }
+ }
+]

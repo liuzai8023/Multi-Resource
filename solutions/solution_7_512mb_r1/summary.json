@@ -1,0 +1,29 @@
+{
+ "solution_id": 7,
+ "config": {
+  "solution_id": 7,
+  "mapper_memory_mb": 512,
+  "mapper_concurrency": 55,
+  "objects_per_reducer": 55,
+  "num_reduce_tasks": 1,
+  "reducer_memory_mb": 512,
+  "pareto_optimal": true
+ },
+ "run_times_s": [
+  23.12981104850769,
+  24.434814929962158,
+  22.2091703414917
+ ],
+ "run_costs_cny": [
+  0.0355,
+  0.03544,
+  0.03499
+ ],
+ "mean_time_s": 23.26,
+ "model_time_s": 23.22,
+ "time_accuracy_pct": 99.8,
+ "mean_cost_cny": 0.03531,
+ "model_cost_cny": 0.03388,
+ "cost_accuracy_pct": 96.0,
+ "note": "mean over 3 runs; 1-reduce-task variant; warm-up discarded"
+}
